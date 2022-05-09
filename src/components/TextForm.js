@@ -2,13 +2,15 @@ import React, {useState} from 'react'
 
 
 export default function TextForm(props) {
-    
+    const [text, setText] = useState('Enter text here');
 
     const handleUpClick = ()=>{
-        console.log("toUppercase was clicked");
+        // console.log("toUppercase was clicked");
+        let newText = text.toUpperCase();
+        setText(newText)
     }
-    const handleOnChange = ()=>{
-        
+    const handleOnChange = (event)=>{
+        setText(event.target.value);
     }
 
     return (
@@ -16,8 +18,7 @@ export default function TextForm(props) {
             <div className='container my-3'>
                 <div className="mb-3">
                     <h1>{props.heading}</h1>
-                    {/* <label for="myBox" className="form-label">Text Area</label> */}
-                    <textarea className='form-control' onChange={handleOnChange} id='myBox' rows='5'></textarea>
+                    <textarea className='form-control' value={text} onChange={handleOnChange} id='myBox' rows='5'></textarea>
                 </div>
                 <button type='button' className='btn btn-primary' onClick={handleUpClick}>Convert to uppercase</button>
             </div>
