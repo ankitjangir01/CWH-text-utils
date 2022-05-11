@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
+import Alert from './Alert';
 export default function TextForm(props) {
     const [text, setText] = useState('');
+    const [alert,setAlert] = useState(null);
 
     const handleUpClick = () => {
         // console.log("toUppercase was clicked");
@@ -19,7 +21,13 @@ export default function TextForm(props) {
         let selectedText = document.getElementById('myBox');
         selectedText.select();
         navigator.clipboard.writeText(selectedText.value);
-        
+        setAlert({
+            msg: 'copied to clipboard',
+            type: 'success'
+        })
+        setTimeout(()=>{
+            setAlert(null);
+        },2000)
     }
     const removeSpaces = ()=>{
         let newText = text.split(/[' ']+/);
@@ -29,6 +37,7 @@ export default function TextForm(props) {
 
     return (
         <form>
+            <Alert alert={alert} />
             <div className='container my-3' style={{color: props.mode==='light' ? 'black':'white'}}>
                 <div className="mb-3">
                     <h1>{props.heading}</h1>
