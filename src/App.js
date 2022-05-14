@@ -1,20 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';
 import About from './components/About';
-import React, {useState} from 'react';
-import Alert from './components/Alert';
+import React, { useState } from 'react';
+import { Routes, Route } from "react-router-dom";
 
 function App() {
-  const [mode,setMode] = useState('light');
+  const [mode, setMode] = useState('light');
 
-  const toggleMode = ()=>{
-    if(mode=='light'){
+  const toggleMode = () => {
+    if (mode === 'light') {
       setMode('dark');
       document.body.style.backgroundColor = '#383847';
     }
-    else{
+    else {
       setMode('light');
       document.body.style.backgroundColor = 'white';
 
@@ -23,8 +22,11 @@ function App() {
 
   return (
     <>
-      <Navbar title="TextUtils" aboutText="About TextUtils" mode={mode} toggleMode={toggleMode}/>
-      <TextForm heading="Enter text to analyse below" mode={mode}/>
+      <Navbar title="TextUtils" aboutText="About" mode={mode} toggleMode={toggleMode} />
+      <Routes>
+        <Route exact path="/" element={<TextForm heading="Enter text to manipulate" mode={mode} />} />
+        <Route exact path="about" element={<About mode={mode}/>} />
+      </Routes>
     </>
   );
 }
