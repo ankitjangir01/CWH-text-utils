@@ -1,16 +1,15 @@
 {
-  "files": {
-    "main.css": "/CWH-text-utils/static/css/main.abd64e84.css",
-    "main.js": "/CWH-text-utils/static/js/main.06f84e74.js",
-    "static/js/787.0cbdef75.chunk.js": "/CWH-text-utils/static/js/787.0cbdef75.chunk.js",
-    "static/media/logo.svg": "/CWH-text-utils/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/CWH-text-utils/index.html",
-    "main.abd64e84.css.map": "/CWH-text-utils/static/css/main.abd64e84.css.map",
-    "main.06f84e74.js.map": "/CWH-text-utils/static/js/main.06f84e74.js.map",
-    "787.0cbdef75.chunk.js.map": "/CWH-text-utils/static/js/787.0cbdef75.chunk.js.map"
-  },
-  "entrypoints": [
-    "static/css/main.abd64e84.css",
-    "static/js/main.06f84e74.js"
-  ]
+  "main.css": "/CWH-text-utils/static/css/main.6fc9d436.chunk.css",
+  "main.js": "/CWH-text-utils/static/js/main.57a43af2.chunk.js",
+  "main.js.map": "/CWH-text-utils/static/js/main.57a43af2.chunk.js.map",
+  "static/js/1.cc360fb6.chunk.js": "/CWH-text-utils/static/js/1.cc360fb6.chunk.js",
+  "static/js/1.cc360fb6.chunk.js.map": "/CWH-text-utils/static/js/1.cc360fb6.chunk.js.map",
+  "static/js/2.23acdff2.chunk.js": "/CWH-text-utils/static/js/2.23acdff2.chunk.js",
+  "static/js/2.23acdff2.chunk.js.map": "/CWH-text-utils/static/js/2.23acdff2.chunk.js.map",
+  "runtime~main.js": "/CWH-text-utils/static/js/runtime~main.3e8083ab.js",
+  "runtime~main.js.map": "/CWH-text-utils/static/js/runtime~main.3e8083ab.js.map",
+  "static/css/main.6fc9d436.chunk.css.map": "/CWH-text-utils/static/css/main.6fc9d436.chunk.css.map",
+  "index.html": "/CWH-text-utils/index.html",
+  "precache-manifest.26fdbd6d8bd94eed8520eafeee539235.js": "/CWH-text-utils/precache-manifest.26fdbd6d8bd94eed8520eafeee539235.js",
+  "service-worker.js": "/CWH-text-utils/service-worker.js"
 }
